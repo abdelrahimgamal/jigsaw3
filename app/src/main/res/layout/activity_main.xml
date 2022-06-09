@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_back"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="X Sport Puzzles"
+        android:textSize="40dp"
+        android:elevation="4dp"
+        app:cornerRadius="30sp"
+        android:backgroundTint="@color/lightgreen"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textStyle="bold"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/policy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#A614FF"
+        android:elevation="4dp"
+        android:text="Please accept our privacy policy to use an app"
+        android:textAllCaps="false"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:cornerRadius="30sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/accept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="ACCEPT"
+        android:textSize="14dp"
+        android:elevation="4dp"
+        app:cornerRadius="30sp"
+        android:backgroundTint="#07E838"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/decline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="DECLINE"
+        android:textSize="14dp"
+        android:elevation="4dp"
+        app:cornerRadius="30sp"
+        android:backgroundTint="#FF025D"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textStyle="bold"/>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
