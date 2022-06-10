@@ -19,6 +19,9 @@
             android:name=".SettingActivity"
             android:exported="false" />
         <activity
+            android:name=".ScoresActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
