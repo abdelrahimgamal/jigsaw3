@@ -17,7 +17,7 @@ class ScoresActivity : AppCompatActivity(), NumbersAdapter.OnNumberInteract {
         highScores.setShadowLayer(4f, 4f, 4f, Color.BLACK)
         Log.e("TAG", "onCreate: " + globalPreferences.score)
         var list = globalPreferences.score as List<Int>
-        list = list.sortedBy { it }
+        list = list.sortedByDescending { it }
         scores.adapter = NumbersAdapter(list, this)
     }
 
