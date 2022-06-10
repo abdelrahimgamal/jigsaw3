@@ -15,6 +15,7 @@
         android:layout_marginTop="120dp"
         android:text="X Sport Puzzles"
         android:textSize="40dp"
+        android:id="@+id/mainText"
         android:elevation="4dp"
         app:cornerRadius="30sp"
         android:backgroundTint="@color/lightgreen"

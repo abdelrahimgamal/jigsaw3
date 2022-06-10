@@ -1,6 +1,7 @@
 package myapp.uitest.puzzlejigsaw
 
 import android.content.Intent
+import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
 import android.text.SpannableString
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         accept.setOnClickListener { startActivity(Intent(this, SecondActivity::class.java)) }
         decline.setOnClickListener { this.finish() }
+        mainText.setShadowLayer(4f, 4f, 4f, Color.BLACK)
 
         val text = "Please accept our privacy policy to use an app"
 
