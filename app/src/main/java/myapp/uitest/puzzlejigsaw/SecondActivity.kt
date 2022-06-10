@@ -13,6 +13,7 @@ class SecondActivity : AppCompatActivity() {
         setting.setOnClickListener { startActivity(Intent(this, SettingActivity::class.java)) }
         start.setOnClickListener { startActivity(Intent(this, PuzzleActivity::class.java)) }
         mainText.setShadowLayer(4f, 4f, 4f, Color.BLACK)
+        bestResults.setOnClickListener { startActivity(Intent(this, ScoresActivity::class.java)) }
 
     }
 }

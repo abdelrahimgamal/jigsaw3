@@ -23,6 +23,7 @@ public class PuzzleActivity extends AppCompatActivity implements Runnable, View.
     Button next;
     ImageView ivTips;
     int squareRootNum = 2;
+    int score = 0;
     int drawableId = R.mipmap.pic_02;
     CountDownTimer cTimer = null;
     GlobalPreferences globalPreferences;
@@ -51,6 +52,7 @@ public class PuzzleActivity extends AppCompatActivity implements Runnable, View.
         puzzleLayout.setOnCompleteCallback(new PuzzleLayout.OnCompleteCallback() {
             @Override
             public void onComplete() {
+                score++;
                 Toast.makeText(PuzzleActivity.this, "completed", Toast.LENGTH_LONG).show();
                 puzzleLayout.postDelayed(PuzzleActivity.this, 800);
             }
@@ -157,6 +159,7 @@ public class PuzzleActivity extends AppCompatActivity implements Runnable, View.
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        globalPreferences.storeScore(score);
         cancelTimer();
     }
 }
